@@ -62,6 +62,8 @@ async def on_ready():
     game = discord.Game(name="the verification game")
     await client.change_presence(game=game)
 
+    sys.stdout.flush()
+
 print("Starting up VerifyBot...")
 sys.stdout.flush()
 
