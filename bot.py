@@ -3,6 +3,7 @@
 import discord
 from datetime import datetime
 import pytz
+import sys
 
 TOKEN = "NTQ5MzYyMzk4NTE2MDg0Nzc3.D1Sxgw.cz0Ent5pOqirGgG-zRXxJQvyhdo"
 
@@ -41,6 +42,8 @@ async def on_message(message):
 
         await client.delete_message(message)
 
+    sys.stdout.flush()
+
     return
 
 
@@ -60,6 +63,8 @@ async def on_ready():
     await client.change_presence(game=game)
 
 print("Starting up VerifyBot...")
+sys.stdout.flush()
+
 client.run(TOKEN)
 
 client.loop.run_until_complete(client.logout())
