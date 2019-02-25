@@ -8,6 +8,7 @@ __pycache__/
 
 # IntelliJ files
 .idea/
+venv/
 
 # Distribution / packaging
 .Python
