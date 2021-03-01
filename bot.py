@@ -4,7 +4,7 @@ import discord
 from datetime import datetime
 import pytz
 
-TOKEN = "NTQ5MzYyMzk4NTE2MDg0Nzc3.D1Sxgw.cz0Ent5pOqirGgG-zRXxJQvyhdo"
+TOKEN = "hidden"
 
 client = discord.Client()
 
